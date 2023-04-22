@@ -11,3 +11,9 @@ let input2New = input2.reduce((acumulador, valorActual) =>{
     return valorActual>0?acumulador+valorActual:acumulador;
 })
 console.log(input2New);
+
+//spread with sum
+const nums =[10, 20]
+const sum =(a, b)=> a+b;
+sum(...nums);
+console.log(sum.apply(null, nums));
